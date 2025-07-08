@@ -1,3 +1,4 @@
+
 import { Link, useLocation } from "react-router-dom";
 
 const Header = () => {
@@ -6,10 +7,7 @@ const Header = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Services", path: "/services" },
-    { name: "Solutions", path: "/solutions" },
-    { name: "Vishwakarma", path: "/vishwakarma" },
-    { name: "Research", path: "/research" },
-    { name: "Case Studies", path: "/case-studies" },
+    { name: "Resources", path: "/resources" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
