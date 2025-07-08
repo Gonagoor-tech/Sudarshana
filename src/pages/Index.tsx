@@ -1,5 +1,3 @@
-// Update this page (the content is just a fallback if you fail to update the page)
-
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -22,7 +20,7 @@ const Index = () => {
               Leading the major revolutions of the current era
             </p>
             
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 text-foreground leading-tight animate-fade-in">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-8 text-foreground leading-tight animate-fade-in tracking-tight">
               REVOLUTIONARY
               <br />
               <span className="text-primary">SOUND-BASED AI</span>
@@ -33,7 +31,7 @@ const Index = () => {
             <div className="animate-fade-in">
               <a 
                 href="/about" 
-                className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover-scale transition-all duration-300 hover:shadow-lg"
+                className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-md"
               >
                 ABOUT US
               </a>
@@ -60,12 +58,7 @@ const Index = () => {
             </div>
             
             <div className="text-center lg:text-right">
-              <a 
-                href="/contact" 
-                className="inline-block bg-background text-foreground px-8 py-4 rounded-lg font-semibold hover-scale transition-all duration-300 hover:shadow-lg"
-              >
-                FREE QUOTES
-              </a>
+              {/* Optional Illustration/Graphic */}
             </div>
           </div>
         </div>
@@ -74,7 +67,7 @@ const Index = () => {
       {/* Technology Features */}
       <section className="py-20 px-4 bg-background">
         <div className="max-w-6xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-extrabold mb-6 text-foreground tracking-tight">
             DEFINING THE FUTURE OF TECHNOLOGY
           </h2>
           <h3 className="text-2xl md:text-3xl font-semibold mb-4 text-primary">
@@ -86,58 +79,69 @@ const Index = () => {
         </div>
 
         {/* Innovation Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {/* Next-Gen Innovation */}
-          <div className="bg-card rounded-lg p-6 shadow-lg border hover-scale">
-            <h4 className="text-xl font-bold mb-4 text-card-foreground">Next-Gen Innovation</h4>
-            <p className="text-muted-foreground mb-4">
-              Pioneering the most advanced AI technologies of our time, setting new industry standards and pushing the boundaries of what's possible.
-            </p>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Industry-first algorithms</li>
-              <li>• Breakthrough performance metrics</li>
-              <li>• Revolutionary architecture design</li>
-            </ul>
-          </div>
-
-          {/* Naada Principles */}
-          <div className="bg-card rounded-lg p-6 shadow-lg border hover-scale">
-            <h4 className="text-xl font-bold mb-4 text-card-foreground">Naada Principles</h4>
-            <p className="text-muted-foreground mb-4">
-              Ancient Sanskrit sound science revolutionized with cutting-edge AI, creating unprecedented audio analysis capabilities never seen before.
-            </p>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Harmonic resonance mapping</li>
-              <li>• Quantum frequency recognition</li>
-              <li>• Sacred geometry algorithms</li>
-            </ul>
-          </div>
-
-          {/* Vishwakarma Platform */}
-          <div className="bg-card rounded-lg p-6 shadow-lg border hover-scale">
-            <h4 className="text-xl font-bold mb-4 text-card-foreground">Vishwakarma Platform</h4>
-            <p className="text-muted-foreground mb-4">
-              The world's most sophisticated semiconductor architecture designed specifically for next-generation sound-based machine learning at unprecedented scale.
-            </p>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Ultra-specialized neural processing</li>
-              <li>• Real-time synthesis at light speed</li>
-              <li>• Zero-latency signal processing</li>
-            </ul>
-          </div>
-
-          {/* Progressive AI */}
-          <div className="bg-card rounded-lg p-6 shadow-lg border hover-scale">
-            <h4 className="text-xl font-bold mb-4 text-card-foreground">Progressive AI</h4>
-            <p className="text-muted-foreground mb-4">
-              Machine learning models that represent the pinnacle of current AI evolution, understanding sound at levels previously thought impossible.
-            </p>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>• Quantum-level audio understanding</li>
-              <li>• Predictive sound intelligence</li>
-              <li>• Self-evolving algorithms</li>
-            </ul>
-          </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
+          {[ 
+            {
+              title: "Next-Gen Innovation",
+              description:
+                "Pioneering the most advanced AI technologies of our time, setting new industry standards and pushing the boundaries of what's possible.",
+              bullets: [
+                { icon: "🚀", label: "Industry-first algorithms" },
+                { icon: "📈", label: "Breakthrough performance metrics" },
+                { icon: "🧠", label: "Revolutionary architecture design" },
+              ],
+            },
+            {
+              title: "Naada Principles",
+              description:
+                "Ancient Sanskrit sound science revolutionized with cutting-edge AI, creating unprecedented audio analysis capabilities never seen before.",
+              bullets: [
+                { icon: "🎼", label: "Harmonic resonance mapping" },
+                { icon: "🔬", label: "Quantum frequency recognition" },
+                { icon: "🔺", label: "Sacred geometry algorithms" },
+              ],
+            },
+            {
+              title: "Vishwakarma Platform",
+              description:
+                "The world's most sophisticated semiconductor architecture designed specifically for next-generation sound-based machine learning at unprecedented scale.",
+              bullets: [
+                { icon: "💡", label: "Ultra-specialized neural processing" },
+                { icon: "⚡", label: "Real-time synthesis at light speed" },
+                { icon: "🎧", label: "Zero-latency signal processing" },
+              ],
+            },
+            {
+              title: "Progressive AI",
+              description:
+                "Machine learning models that represent the pinnacle of current AI evolution, understanding sound at levels previously thought impossible.",
+              bullets: [
+                { icon: "🧬", label: "Quantum-level audio understanding" },
+                { icon: "🔊", label: "Predictive sound intelligence" },
+                { icon: "🧠", label: "Self-evolving algorithms" },
+              ],
+            },
+          ].map((item, idx) => (
+            <div
+              key={idx}
+              className="rounded-2xl bg-card border border-border shadow-xl p-6 transition-transform hover:-translate-y-2 duration-300 hover:shadow-2xl"
+            >
+              <h4 className="text-xl font-semibold text-card-foreground mb-4 tracking-wide">
+                {item.title}
+              </h4>
+              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+                {item.description}
+              </p>
+              <ul className="space-y-2 text-sm text-foreground">
+                {item.bullets.map((point, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="text-lg">{point.icon}</span>
+                    <span>{point.label}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -152,29 +156,18 @@ const Index = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center bg-card rounded-lg p-8 shadow-lg border hover-scale">
-              <div className="text-5xl font-bold text-primary mb-2 animate-fade-in">100K+</div>
-              <div className="text-lg font-semibold text-card-foreground mb-2">Times Faster</div>
-              <div className="text-muted-foreground">Processing speed compared to traditional systems</div>
-            </div>
-            
-            <div className="text-center bg-card rounded-lg p-8 shadow-lg border hover-scale">
-              <div className="text-5xl font-bold text-primary mb-2 animate-fade-in">&lt;1ns</div>
-              <div className="text-lg font-semibold text-card-foreground mb-2">Latency</div>
-              <div className="text-muted-foreground">Real-time processing for critical applications</div>
-            </div>
-            
-            <div className="text-center bg-card rounded-lg p-8 shadow-lg border hover-scale">
-              <div className="text-5xl font-bold text-primary mb-2 animate-fade-in">99.9%</div>
-              <div className="text-lg font-semibold text-card-foreground mb-2">Accuracy</div>
-              <div className="text-muted-foreground">Precision in audio analysis and recognition</div>
-            </div>
-            
-            <div className="text-center bg-card rounded-lg p-8 shadow-lg border hover-scale">
-              <div className="text-5xl font-bold text-primary mb-2 animate-fade-in">24/7</div>
-              <div className="text-lg font-semibold text-card-foreground mb-2">Availability</div>
-              <div className="text-muted-foreground">Continuous operation with zero downtime</div>
-            </div>
+            {[ 
+              { stat: "100K+", label: "Times Faster", desc: "Processing speed compared to traditional systems" },
+              { stat: "<1ns", label: "Latency", desc: "Real-time processing for critical applications" },
+              { stat: "99.9%", label: "Accuracy", desc: "Precision in audio analysis and recognition" },
+              { stat: "24/7", label: "Availability", desc: "Continuous operation with zero downtime" },
+            ].map((metric, i) => (
+              <div key={i} className="text-center bg-card rounded-xl p-8 shadow-lg border hover:scale-105 transition-transform">
+                <div className="text-5xl font-bold text-primary mb-2 animate-fade-in">{metric.stat}</div>
+                <div className="text-lg font-semibold text-card-foreground mb-2">{metric.label}</div>
+                <div className="text-muted-foreground text-sm">{metric.desc}</div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
