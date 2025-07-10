@@ -17,8 +17,12 @@ const About = () => {
           {/* Prashanth Raghu */}
           <div className="bg-card rounded-lg p-8 shadow-lg border">
             <div className="text-center mb-6">
-              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl font-bold text-primary">PR</div>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/0ff2ccce-4e79-4491-b210-b4045d1bdef6.png" 
+                  alt="Prashanth Raghu" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-card-foreground">Prashanth Raghu</h3>
               <p className="text-primary font-semibold">Mukhya Nirvaahak, Founder, CEO</p>
@@ -34,8 +38,12 @@ const About = () => {
           {/* Chirag S Rao */}
           <div className="bg-card rounded-lg p-8 shadow-lg border">
             <div className="text-center mb-6">
-              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl font-bold text-primary">CR</div>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/a8334f95-2824-489d-9fbf-eb6f32b996f6.png" 
+                  alt="Chirag S Rao" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-card-foreground">Chirag S Rao</h3>
               <p className="text-primary font-semibold">Mukhya Nirvaahak, CTO</p>
@@ -50,8 +58,12 @@ const About = () => {
           {/* Dhanush DB */}
           <div className="bg-card rounded-lg p-8 shadow-lg border">
             <div className="text-center mb-6">
-              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl font-bold text-primary">DD</div>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/08bea42d-b5a9-47e8-ab21-3405dfeb0bcd.png" 
+                  alt="Dhanush DB" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-card-foreground">Dhanush DB</h3>
               <p className="text-primary font-semibold">Mukhya Nirvaahak, COO</p>
@@ -66,8 +78,12 @@ const About = () => {
           {/* Sowrav */}
           <div className="bg-card rounded-lg p-8 shadow-lg border">
             <div className="text-center mb-6">
-              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl font-bold text-primary">S</div>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/70b63acd-9de5-4663-97cd-075971f8121d.png" 
+                  alt="Sowrav" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-card-foreground">Sowrav</h3>
               <p className="text-primary font-semibold">Nirvaahak, Head of Systems</p>
@@ -81,8 +97,12 @@ const About = () => {
           {/* Anath M Athreya */}
           <div className="bg-card rounded-lg p-8 shadow-lg border">
             <div className="text-center mb-6">
-              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl font-bold text-primary">AA</div>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/aad2f271-cf22-47d4-80da-ff584f99586c.png" 
+                  alt="Anath M Athreya" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-card-foreground">Anath M Athreya</h3>
               <p className="text-primary font-semibold">Nirvaahak, Mathematics Expert</p>
@@ -96,8 +116,12 @@ const About = () => {
           {/* Rahulgouda Mariyappagoudar */}
           <div className="bg-card rounded-lg p-8 shadow-lg border">
             <div className="text-center mb-6">
-              <div className="w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <div className="text-2xl font-bold text-primary">RM</div>
+              <div className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-4">
+                <img 
+                  src="/lovable-uploads/b1ef14e1-4f7e-463d-b04b-b069d6566c20.png" 
+                  alt="Rahulgouda Mariyappagoudar" 
+                  className="w-full h-full object-cover"
+                />
               </div>
               <h3 className="text-xl font-bold text-card-foreground">Rahulgouda Mariyappagoudar</h3>
               <p className="text-primary font-semibold">Nirvaahak, AI in simulation</p>

@@ -1,6 +1,10 @@
 
 import { Link, useLocation } from "react-router-dom";
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const Header = () => {
   const location = useLocation();
 
@@ -18,7 +22,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           
           {/* Logo + Brand Name */}
-          <Link to="/" className="flex items-center space-x-3">
+          <Link to="/" onClick={scrollToTop} className="flex items-center space-x-3">
             <img src="/logo.png" alt="Sudarshana Logo" className="h-9 w-auto" />
             <span className="text-2xl font-bold text-white tracking-wide">Sudarshana</span>
           </Link>
@@ -29,6 +33,7 @@ const Header = () => {
               <Link
                 key={item.path}
                 to={item.path}
+                onClick={scrollToTop}
                 className={`text-sm font-medium hover:text-yellow-400 transition-colors duration-300 ${
                   location.pathname === item.path ? "text-yellow-400" : "text-white/80"
                 }`}
