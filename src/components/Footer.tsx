@@ -32,8 +32,7 @@ const Footer = () => {
           
           <div>
             <h4 className="font-semibold mb-4">Connect</h4>
-            <p className="text-primary-foreground/80 mb-2">contact@sudarshana.ai</p>
-            <p className="text-primary-foreground/80">+1 (555) 123-4567</p>
+            <p className="text-primary-foreground/80 mb-2">echo@sudarshana.ai</p>
           </div>
         </div>
         

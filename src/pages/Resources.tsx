@@ -1,4 +1,3 @@
-
 const Resources = () => {
   return (
     <div className="min-h-screen py-12 md:py-20 px-4">
@@ -22,7 +21,7 @@ const Resources = () => {
             Revolutionary technology solutions that merge ancient Sanskrit principles with cutting-edge AI and semiconductor innovation.
           </p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
           <div className="bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl p-6 md:p-8 shadow-lg border border-primary/10">
             <div className="flex items-center mb-4">
@@ -49,7 +48,7 @@ const Resources = () => {
               </li>
             </ul>
           </div>
-          
+
           <div className="bg-gradient-to-br from-accent/5 to-primary/5 rounded-2xl p-6 md:p-8 shadow-lg border border-accent/10">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mr-4">
@@ -74,59 +73,6 @@ const Resources = () => {
                 100,000x faster processing than traditional methods
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* Research Areas */}
-      <section className="max-w-7xl mx-auto mb-20 md:mb-32">
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 text-foreground">
-            Research Initiatives
-          </h2>
-          <p className="text-base md:text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            According to the Sri Rudram, intelligence manifests in different forms. We believe it's now moving into the computational sphere through these three core research areas.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary">🎵</span>
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-2">Naada Jnana</h3>
-              <h4 className="text-base md:text-lg font-semibold text-primary mb-4">Knowledge on Sound</h4>
-            </div>
-            <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-center">
-              Research on sound and its feature management using Python and C++ libraries. Understanding the fundamental principles of sound waves and their computational representation.
-            </p>
-          </div>
-
-          <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-accent">🌈</span>
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-2">Prajwala Jnana</h3>
-              <h4 className="text-base md:text-lg font-semibold text-accent mb-4">Research on Colors</h4>
-            </div>
-            <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-center">
-              Deep research on colors and color schemes for representation conversions. Exploring the relationship between color theory and machine learning applications.
-            </p>
-          </div>
-
-          <div className="bg-card rounded-2xl p-6 md:p-8 shadow-lg border hover:shadow-xl transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
-            <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl font-bold text-primary">👁️</span>
-              </div>
-              <h3 className="text-xl md:text-2xl font-bold text-card-foreground mb-2">Chitra Jnana</h3>
-              <h4 className="text-base md:text-lg font-semibold text-primary mb-4">Understanding Visual World</h4>
-            </div>
-            <p className="text-sm md:text-base text-muted-foreground leading-relaxed text-center">
-              Understanding the world as a set of moving images or pictures. Developing computational models that can interpret and process visual information like human perception.
-            </p>
           </div>
         </div>
       </section>
@@ -220,6 +166,7 @@ const Resources = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 md:gap-12">
+          {/* Updated Card 1 */}
           <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 md:p-8 shadow-lg border border-primary/10">
             <div className="flex items-center mb-4">
               <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
@@ -238,23 +185,26 @@ const Resources = () => {
               Results: 99.9% accuracy improvement with sub-nanosecond latency
             </div>
           </div>
-          
-          <div className="bg-gradient-to-br from-accent/5 to-transparent rounded-2xl p-6 md:p-8 shadow-lg border border-accent/10">
+
+          {/* Updated Card 2 to match style */}
+          <div className="bg-gradient-to-br from-primary/5 to-transparent rounded-2xl p-6 md:p-8 shadow-lg border border-primary/10">
             <div className="flex items-center mb-4">
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mr-4">
-                <span className="text-xl font-bold text-accent">🏢</span>
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mr-4">
+                <span className="text-xl font-bold text-primary">⚡</span>
               </div>
               <h3 className="text-xl md:text-2xl font-bold text-card-foreground">Enterprise AI Implementation</h3>
             </div>
             <p className="text-sm md:text-base text-muted-foreground mb-6 leading-relaxed">
               Fortune 500 company successfully deployed our naada-based AI system for real-time decision making and automated process optimization.
             </p>
-            <div className="bg-accent/5 rounded-lg p-4 mb-4">
-              <div className="text-2xl md:text-3xl font-bold text-accent mb-2">85%</div>
-              <div className="text-sm md:text-base font-semibold text-foreground">Efficiency Increase</div>
+            <div className="bg-primary/5 rounded-lg p-4 mb-4">
+              <div className="text-2xl md:text-3xl font-bold text-primary mb-2">85%
+Efficiency Increase
+ </div>
+              <div className="text-sm md:text-base font-semibold text-foreground">Faster Processing</div>
             </div>
-            <div className="text-sm md:text-base text-accent font-semibold">
-              Results: Reduced operational costs by 40% while improving accuracy
+            <div className="text-sm md:text-base text-primary font-semibold">
+             Results: Reduced operational costs by 40% while improving accuracy
             </div>
           </div>
         </div>

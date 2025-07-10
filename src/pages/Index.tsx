@@ -46,14 +46,10 @@ const Index = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Provide solutions for
-                <br />
-                the realizable growth
+                Built to Scale. Designed to Serve. Inspired by Shastra.
               </h2>
               <p className="text-lg text-primary-foreground/90 leading-relaxed">
-                A tale of a fateful trip that started from this tropic port aboard this tiny ship 
-                today still wanted by the government they survive as soldiers of fortune to 
-                ever wondered the east side to a deluxe apartment.
+                Our AI platforms don’t just grow — they evolve in rhythm with the cosmos and the code.
               </p>
             </div>
             

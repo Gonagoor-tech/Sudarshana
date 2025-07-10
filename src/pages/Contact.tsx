@@ -17,16 +17,12 @@ const Contact = () => {
             <div className="space-y-4 text-muted-foreground">
               <div>
                 <strong className="text-card-foreground">Email:</strong><br />
-                contact@sudarshana.ai
-              </div>
-              <div>
-                <strong className="text-card-foreground">Phone:</strong><br />
-                +1 (555) 123-4567
+                echo@sudarshana.ai
               </div>
               <div>
                 <strong className="text-card-foreground">Address:</strong><br />
-                Silicon Valley, CA<br />
-                United States
+                Bengaluru, KA<br />
+               INDIA
               </div>
             </div>
           </div>
