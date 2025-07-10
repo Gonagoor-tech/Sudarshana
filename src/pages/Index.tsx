@@ -1,3 +1,6 @@
+// File: Index.jsx
+import { CheckCircle } from "lucide-react";
+
 const Index = () => {
   return (
     <div className="min-h-screen">
@@ -5,8 +8,8 @@ const Index = () => {
       <section className="relative h-screen flex items-center">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&h=1080&fit=crop" 
+          <img
+            src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920&h=1080&fit=crop"
             alt="Advanced technology background"
             className="w-full h-full object-cover"
           />
@@ -19,7 +22,7 @@ const Index = () => {
             <p className="text-lg text-muted-foreground mb-4 animate-fade-in">
               Leading the major revolutions of the current era
             </p>
-            
+
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-8 text-foreground leading-tight animate-fade-in tracking-tight">
               REVOLUTIONARY
               <br />
@@ -27,10 +30,10 @@ const Index = () => {
               <br />
               PLATFORM
             </h1>
-            
+
             <div className="animate-fade-in">
-              <a 
-                href="/about" 
+              <a
+                href="/about"
                 className="inline-block bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-all duration-300 hover:shadow-xl shadow-md"
               >
                 ABOUT US
@@ -49,10 +52,14 @@ const Index = () => {
                 Built to Scale. Designed to Serve. Inspired by Shastra.
               </h2>
               <p className="text-lg text-primary-foreground/90 leading-relaxed">
+<<<<<<< HEAD
                 Our AI platforms don’t just grow — they evolve in rhythm with the cosmos and the code.
+=======
+                A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to ever wondered the east side to a deluxe apartment.
+>>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               </p>
             </div>
-            
+
             <div className="text-center lg:text-right">
               {/* Optional Illustration/Graphic */}
             </div>
@@ -74,17 +81,23 @@ const Index = () => {
           </p>
         </div>
 
-        {/* Innovation Grid */}
+        {/* Innovation Grid with Redesigned Cards */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 max-w-7xl mx-auto">
-          {[ 
+          {[
             {
               title: "Next-Gen Innovation",
               description:
                 "Pioneering the most advanced AI technologies of our time, setting new industry standards and pushing the boundaries of what's possible.",
               bullets: [
+<<<<<<< HEAD
                 { icon: "🌀", label: "Industry-first algorithms" },
                 { icon: "🌀", label: "Breakthrough performance metrics" },
                 { icon: "🌀", label: "Revolutionary architecture design" },
+=======
+                { label: "Industry-first algorithms" },
+                { label: "Breakthrough performance metrics" },
+                { label: "Revolutionary architecture design" },
+>>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
             {
@@ -92,9 +105,15 @@ const Index = () => {
               description:
                 "Ancient Sanskrit sound science revolutionized with cutting-edge AI, creating unprecedented audio analysis capabilities never seen before.",
               bullets: [
+<<<<<<< HEAD
                 { icon: "🌀", label: "Harmonic resonance mapping" },
                 { icon: "🌀", label: "Quantum frequency recognition" },
                 { icon: "🌀", label: "Sacred geometry algorithms" },
+=======
+                { label: "Harmonic resonance mapping" },
+                { label: "Quantum frequency recognition" },
+                { label: "Sacred geometry algorithms" },
+>>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
             {
@@ -102,9 +121,15 @@ const Index = () => {
               description:
                 "The world's most sophisticated semiconductor architecture designed specifically for next-generation sound-based machine learning at unprecedented scale.",
               bullets: [
+<<<<<<< HEAD
                 { icon: "🌀", label: "Ultra-specialized neural processing" },
                 { icon: "🌀", label: "Real-time synthesis at light speed" },
                 { icon: "🌀", label: "Zero-latency signal processing" },
+=======
+                { label: "Ultra-specialized neural processing" },
+                { label: "Real-time synthesis at light speed" },
+                { label: "Zero-latency signal processing" },
+>>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
             {
@@ -112,27 +137,33 @@ const Index = () => {
               description:
                 "Machine learning models that represent the pinnacle of current AI evolution, understanding sound at levels previously thought impossible.",
               bullets: [
+<<<<<<< HEAD
                 { icon: "🌀", label: "Quantum-level audio understanding" },
                 { icon: "🌀", label: "Predictive sound intelligence" },
                 { icon: "🌀", label: "Self-evolving algorithms" },
+=======
+                { label: "Quantum-level audio understanding" },
+                { label: "Predictive sound intelligence" },
+                { label: "Self-evolving algorithms" },
+>>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
           ].map((item, idx) => (
             <div
               key={idx}
-              className="rounded-2xl bg-card border border-border shadow-xl p-6 transition-transform hover:-translate-y-2 duration-300 hover:shadow-2xl"
+              className="rounded-3xl bg-white/5 backdrop-blur-lg border border-border shadow-2xl p-8 transition-transform hover:-translate-y-2 hover:shadow-primary/30 hover:ring-1 hover:ring-primary/40"
             >
-              <h4 className="text-xl font-semibold text-card-foreground mb-4 tracking-wide">
+              <h4 className="text-2xl font-bold text-primary mb-4 tracking-tight leading-snug">
                 {item.title}
               </h4>
-              <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+              <p className="text-sm text-muted-foreground mb-6 leading-relaxed font-medium">
                 {item.description}
               </p>
-              <ul className="space-y-2 text-sm text-foreground">
+              <ul className="space-y-3">
                 {item.bullets.map((point, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <span className="text-lg">{point.icon}</span>
-                    <span>{point.label}</span>
+                  <li key={i} className="flex items-start gap-3 text-sm text-foreground">
+                    <CheckCircle className="w-4 h-4 text-primary shrink-0 mt-1" />
+                    <span className="leading-snug font-medium">{point.label}</span>
                   </li>
                 ))}
               </ul>
@@ -150,9 +181,9 @@ const Index = () => {
               Setting new industry benchmarks with revolutionary computational capabilities
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[ 
+            {[
               { stat: "100K+", label: "Times Faster", desc: "Processing speed compared to traditional systems" },
               { stat: "<1ns", label: "Latency", desc: "Real-time processing for critical applications" },
               { stat: "99.9%", label: "Accuracy", desc: "Precision in audio analysis and recognition" },
