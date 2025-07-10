@@ -1,5 +1,8 @@
 
 import { Link, useLocation } from "react-router-dom";
+import { Menu } from "lucide-react";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useState } from "react";
 
 const scrollToTop = () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -7,6 +10,7 @@ const scrollToTop = () => {
 
 const Header = () => {
   const location = useLocation();
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { name: "Home", path: "/" },
@@ -15,6 +19,11 @@ const Header = () => {
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
+
+  const handleNavClick = () => {
+    scrollToTop();
+    setIsOpen(false);
+  };
 
   return (
     <header className="bg-[#0f0f1a]/95 text-white backdrop-blur-md border-b border-white/10 sticky top-0 z-50 shadow-md">
@@ -43,23 +52,32 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu */}
           <div className="md:hidden">
-            <button className="text-white hover:text-yellow-400">
-              <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              </svg>
-            </button>
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <button className="text-white hover:text-yellow-400 p-2">
+                  <Menu className="w-6 h-6" />
+                  <span className="sr-only">Open menu</span>
+                </button>
+              </SheetTrigger>
+              <SheetContent side="right" className="bg-[#0f0f1a] border-white/10">
+                <nav className="flex flex-col space-y-6 mt-8">
+                  {navItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      onClick={handleNavClick}
+                      className={`text-lg font-medium hover:text-yellow-400 transition-colors duration-300 ${
+                        location.pathname === item.path ? "text-yellow-400" : "text-white/80"
+                      }`}
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
