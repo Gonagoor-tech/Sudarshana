@@ -86,9 +86,9 @@ const Index = () => {
               description:
                 "Pioneering the most advanced AI technologies of our time, setting new industry standards and pushing the boundaries of what's possible.",
               bullets: [
-                { icon: "🚀", label: "Industry-first algorithms" },
-                { icon: "📈", label: "Breakthrough performance metrics" },
-                { icon: "🧠", label: "Revolutionary architecture design" },
+                { icon: "🌀", label: "Industry-first algorithms" },
+                { icon: "🌀", label: "Breakthrough performance metrics" },
+                { icon: "🌀", label: "Revolutionary architecture design" },
               ],
             },
             {
@@ -96,9 +96,9 @@ const Index = () => {
               description:
                 "Ancient Sanskrit sound science revolutionized with cutting-edge AI, creating unprecedented audio analysis capabilities never seen before.",
               bullets: [
-                { icon: "🎼", label: "Harmonic resonance mapping" },
-                { icon: "🔬", label: "Quantum frequency recognition" },
-                { icon: "🔺", label: "Sacred geometry algorithms" },
+                { icon: "🌀", label: "Harmonic resonance mapping" },
+                { icon: "🌀", label: "Quantum frequency recognition" },
+                { icon: "🌀", label: "Sacred geometry algorithms" },
               ],
             },
             {
@@ -106,9 +106,9 @@ const Index = () => {
               description:
                 "The world's most sophisticated semiconductor architecture designed specifically for next-generation sound-based machine learning at unprecedented scale.",
               bullets: [
-                { icon: "💡", label: "Ultra-specialized neural processing" },
-                { icon: "⚡", label: "Real-time synthesis at light speed" },
-                { icon: "🎧", label: "Zero-latency signal processing" },
+                { icon: "🌀", label: "Ultra-specialized neural processing" },
+                { icon: "🌀", label: "Real-time synthesis at light speed" },
+                { icon: "🌀", label: "Zero-latency signal processing" },
               ],
             },
             {
@@ -116,9 +116,9 @@ const Index = () => {
               description:
                 "Machine learning models that represent the pinnacle of current AI evolution, understanding sound at levels previously thought impossible.",
               bullets: [
-                { icon: "🧬", label: "Quantum-level audio understanding" },
-                { icon: "🔊", label: "Predictive sound intelligence" },
-                { icon: "🧠", label: "Self-evolving algorithms" },
+                { icon: "🌀", label: "Quantum-level audio understanding" },
+                { icon: "🌀", label: "Predictive sound intelligence" },
+                { icon: "🌀", label: "Self-evolving algorithms" },
               ],
             },
           ].map((item, idx) => (
