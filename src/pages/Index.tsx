@@ -1,4 +1,4 @@
-// File: Index.jsx
+// File: Index.tsx
 import { CheckCircle } from "lucide-react";
 
 const Index = () => {
@@ -52,14 +52,9 @@ const Index = () => {
                 Built to Scale. Designed to Serve. Inspired by Shastra.
               </h2>
               <p className="text-lg text-primary-foreground/90 leading-relaxed">
-<<<<<<< HEAD
                 Our AI platforms don’t just grow — they evolve in rhythm with the cosmos and the code.
-=======
-                A tale of a fateful trip that started from this tropic port aboard this tiny ship today still wanted by the government they survive as soldiers of fortune to ever wondered the east side to a deluxe apartment.
->>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               </p>
             </div>
-
             <div className="text-center lg:text-right">
               {/* Optional Illustration/Graphic */}
             </div>
@@ -89,15 +84,9 @@ const Index = () => {
               description:
                 "Pioneering the most advanced AI technologies of our time, setting new industry standards and pushing the boundaries of what's possible.",
               bullets: [
-<<<<<<< HEAD
                 { icon: "🌀", label: "Industry-first algorithms" },
                 { icon: "🌀", label: "Breakthrough performance metrics" },
                 { icon: "🌀", label: "Revolutionary architecture design" },
-=======
-                { label: "Industry-first algorithms" },
-                { label: "Breakthrough performance metrics" },
-                { label: "Revolutionary architecture design" },
->>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
             {
@@ -105,15 +94,9 @@ const Index = () => {
               description:
                 "Ancient Sanskrit sound science revolutionized with cutting-edge AI, creating unprecedented audio analysis capabilities never seen before.",
               bullets: [
-<<<<<<< HEAD
                 { icon: "🌀", label: "Harmonic resonance mapping" },
                 { icon: "🌀", label: "Quantum frequency recognition" },
                 { icon: "🌀", label: "Sacred geometry algorithms" },
-=======
-                { label: "Harmonic resonance mapping" },
-                { label: "Quantum frequency recognition" },
-                { label: "Sacred geometry algorithms" },
->>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
             {
@@ -121,15 +104,9 @@ const Index = () => {
               description:
                 "The world's most sophisticated semiconductor architecture designed specifically for next-generation sound-based machine learning at unprecedented scale.",
               bullets: [
-<<<<<<< HEAD
                 { icon: "🌀", label: "Ultra-specialized neural processing" },
                 { icon: "🌀", label: "Real-time synthesis at light speed" },
                 { icon: "🌀", label: "Zero-latency signal processing" },
-=======
-                { label: "Ultra-specialized neural processing" },
-                { label: "Real-time synthesis at light speed" },
-                { label: "Zero-latency signal processing" },
->>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
             {
@@ -137,15 +114,9 @@ const Index = () => {
               description:
                 "Machine learning models that represent the pinnacle of current AI evolution, understanding sound at levels previously thought impossible.",
               bullets: [
-<<<<<<< HEAD
                 { icon: "🌀", label: "Quantum-level audio understanding" },
                 { icon: "🌀", label: "Predictive sound intelligence" },
                 { icon: "🌀", label: "Self-evolving algorithms" },
-=======
-                { label: "Quantum-level audio understanding" },
-                { label: "Predictive sound intelligence" },
-                { label: "Self-evolving algorithms" },
->>>>>>> 506d4e349855cee5ec6920ef3e834dbc1266f60a
               ],
             },
           ].map((item, idx) => (
