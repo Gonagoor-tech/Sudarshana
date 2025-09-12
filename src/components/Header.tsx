@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Menu } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
@@ -14,6 +13,7 @@ const Header = () => {
 
   const navItems = [
     { name: "Home", path: "/" },
+    { name: "Vishwakarma", path: "/vishwakarma" },
     { name: "Services", path: "/services" },
     { name: "Resources", path: "/resources" },
     { name: "About", path: "/about" },
@@ -26,28 +26,31 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-[#0f0f1a]/95 text-white backdrop-blur-md border-b border-white/10 sticky top-0 z-50 shadow-md">
+    <header className="bg-[#0a0a14] text-white border-b border-white/10 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           
           {/* Logo + Brand Name */}
           <Link to="/" onClick={scrollToTop} className="flex items-center space-x-3">
-            <img src="/logo.png" alt="Sudarshana Logo" className="h-9 w-auto" />
-            <span className="text-2xl font-bold text-white tracking-wide">Sudarshana</span>
+            <img src="/logo.png" alt="Sudarshana Logo" className="h-10 w-auto" />
+            <span className="text-3xl font-bold text-white tracking-wider">Sudarshana</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-10">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
                 onClick={scrollToTop}
-                className={`text-sm font-medium hover:text-yellow-400 transition-colors duration-300 ${
-                  location.pathname === item.path ? "text-yellow-400" : "text-white/80"
+                className={`relative text-sm font-medium text-white/80 transition-colors duration-300 group ${
+                  location.pathname === item.path ? "text-white" : ""
                 }`}
               >
                 {item.name}
+                <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-yellow-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out ${
+                    location.pathname === item.path ? "scale-x-100" : ""
+                }`}></span>
               </Link>
             ))}
           </nav>
@@ -57,18 +60,23 @@ const Header = () => {
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <button className="text-white hover:text-yellow-400 p-2">
-                  <Menu className="w-6 h-6" />
+                  <Menu className="w-7 h-7" />
                   <span className="sr-only">Open menu</span>
                 </button>
               </SheetTrigger>
-              <SheetContent side="right" className="bg-[#0f0f1a] border-white/10">
-                <nav className="flex flex-col space-y-6 mt-8">
+              <SheetContent side="right" className="bg-[#0a0a14] border-l border-white/10">
+                <div className="flex justify-end p-4">
+                    <button onClick={() => setIsOpen(false)} className="text-white hover:text-yellow-400">
+                        <Menu className="w-7 h-7" />
+                    </button>
+                </div>
+                <nav className="flex flex-col items-center space-y-8 mt-10">
                   {navItems.map((item) => (
                     <Link
                       key={item.path}
                       to={item.path}
                       onClick={handleNavClick}
-                      className={`text-lg font-medium hover:text-yellow-400 transition-colors duration-300 ${
+                      className={`text-xl font-medium hover:text-yellow-400 transition-colors duration-300 ${
                         location.pathname === item.path ? "text-yellow-400" : "text-white/80"
                       }`}
                     >

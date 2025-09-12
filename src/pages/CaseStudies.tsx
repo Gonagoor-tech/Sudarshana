@@ -1,31 +1,43 @@
 const CaseStudies = () => {
   return (
-    <div className="min-h-screen py-20 px-4">
-      <section className="max-w-6xl mx-auto text-center mb-20">
-        <h1 className="text-4xl md:text-6xl font-bold mb-8 text-foreground">
-          Case Studies
-        </h1>
-        <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto">
-          Real-world applications of our revolutionary AI and semiconductor technologies.
-        </p>
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Hero Section */}
+      <section className="py-24 md:py-32 bg-background">
+        <div className="max-w-7xl mx-auto px-8 text-center">
+          <h1 className="text-6xl md:text-7xl font-light mb-8 leading-tight">
+            Case Studies
+          </h1>
+          <p className="text-xl text-foreground/70 font-light max-w-4xl mx-auto leading-relaxed">
+            Real-world applications of our revolutionary AI and semiconductor technologies.
+          </p>
+        </div>
       </section>
 
-      <section className="max-w-7xl mx-auto">
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="bg-card rounded-lg p-8 shadow-lg border">
-            <h3 className="text-2xl font-bold mb-4 text-card-foreground">Audio Processing Breakthrough</h3>
-            <p className="text-muted-foreground mb-4">
-              A leading tech company achieved 100,000x faster audio processing using our Vishwakarma platform.
-            </p>
-            <div className="text-primary font-semibold">Results: 99.9% accuracy improvement</div>
-          </div>
-          
-          <div className="bg-card rounded-lg p-8 shadow-lg border">
-            <h3 className="text-2xl font-bold mb-4 text-card-foreground">Enterprise AI Implementation</h3>
-            <p className="text-muted-foreground mb-4">
-              Fortune 500 company deployed our naada-based AI for real-time decision making.
-            </p>
-            <div className="text-primary font-semibold">Results: 85% efficiency increase</div>
+      {/* Case Studies Section */}
+      <section className="py-24">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="grid lg:grid-cols-2 gap-12">
+            <div className="bg-secondary rounded-2xl p-10 shadow-lg border border-border/80 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-2xl font-medium mb-4 text-foreground">Audio Processing Breakthrough</h3>
+              <p className="text-foreground/70 font-light leading-relaxed mb-6">
+                A leading tech company achieved 100,000x faster audio processing using our Vishwakarma platform.
+              </p>
+              <div className="bg-yellow-400/10 rounded-lg p-4">
+                <div className="text-3xl font-bold text-yellow-400">99.9%</div>
+                <div className="text-sm font-medium text-yellow-300">Accuracy Improvement</div>
+              </div>
+            </div>
+            
+            <div className="bg-secondary rounded-2xl p-10 shadow-lg border border-border/80 hover:shadow-xl transition-shadow duration-300">
+              <h3 className="text-2xl font-medium mb-4 text-foreground">Enterprise AI Implementation</h3>
+              <p className="text-foreground/70 font-light leading-relaxed mb-6">
+                Fortune 500 company deployed our naada-based AI for real-time decision making.
+              </p>
+              <div className="bg-yellow-400/10 rounded-lg p-4">
+                <div className="text-3xl font-bold text-yellow-400">85%</div>
+                <div className="text-sm font-medium text-yellow-300">Efficiency Increase</div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
