@@ -1,11 +1,11 @@
-const Services = () => {
+const Products = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
       <section className="py-24 md:py-32 bg-background">
         <div className="max-w-7xl mx-auto px-8 text-center">
           <h1 className="text-6xl md:text-7xl font-light mb-8 leading-tight">
-            Our Services
+            Our Products
           </h1>
           <p className="text-xl text-foreground/70 font-light max-w-4xl mx-auto leading-relaxed">
             Comprehensive AI and semiconductor solutions bridging ancient wisdom with modern technology.
@@ -13,7 +13,7 @@ const Services = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Products Section */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12 mb-24">
@@ -30,11 +30,11 @@ const Services = () => {
                 title: "Semiconductor Design",
                 desc: "Next-generation chip architecture optimized for AI and machine learning workloads."
               }
-            ].map((service, i) => (
+            ].map((product, i) => (
               <div key={i} className="bg-secondary rounded-2xl p-10 shadow-lg border border-border/80 hover:shadow-xl transition-shadow duration-300">
-                <h3 className="text-2xl font-medium mb-4 text-foreground">{service.title}</h3>
+                <h3 className="text-2xl font-medium mb-4 text-foreground">{product.title}</h3>
                 <p className="text-foreground/70 font-light leading-relaxed">
-                  {service.desc}
+                  {product.desc}
                 </p>
               </div>
             ))}
@@ -114,4 +114,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Products;
