@@ -30,7 +30,7 @@ const Index = () => {
                 <span className="text-white/90 text-sm font-medium">Leading the major revolutions of the current era</span>
               </div>
               
-              <h1 className="text-7xl md:text-8xl lg:text-7xl font-light text-white mb-6 tracking-tight leading-none">
+              <h1 className="text-5xl sm:text-6xl md:text-7xl font-light text-white mb-6 tracking-tight leading-none">
                 REVOLUTIONARY
                 <br />
                 <span className="font-extralight italic">SOUND-BASED</span>
@@ -38,21 +38,21 @@ const Index = () => {
                 <span className="font-bold">AI PLATFORM</span>
               </h1>
               
-              <p className="text-xl text-white/80 max-w-2xl mb-12 font-light leading-relaxed">
+              <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-12 font-light leading-relaxed">
                 Revolutionary platform combining quantum computing with ancient sound principles to create the future of audio intelligence.
               </p>
             </div>
 
-            <div className="flex items-center gap-6">
+            <div className="flex flex-col sm:flex-row items-center gap-6">
               <a
                 href="/about"
-                className="group flex items-center gap-3 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-all duration-300"
+                className="group w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-all duration-300"
               >
                 <span>ABOUT US</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               
-              <button className="group flex items-center gap-3 px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300">
+              <button className="group w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300">
                 <Play className="w-4 h-4" />
                 <span>Watch Demo</span>
               </button>
@@ -66,14 +66,14 @@ const Index = () => {
         <div className="max-w-7xl mx-auto px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
-              <h2 className="text-5xl md:text-6xl font-light mb-8 leading-tight">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-light mb-8 leading-tight">
                 Built to Scale.
                 <br />
                 <span className="font-extralight italic">Designed</span> to Serve.
                 <br />
                 <span className="font-medium">Inspired</span> by Shastra.
               </h2>
-              <p className="text-xl text-foreground/80 font-light leading-relaxed">
+              <p className="text-lg sm:text-xl text-foreground/80 font-light leading-relaxed">
                 Our AI platforms don't just grow — they evolve in rhythm with the cosmos and the code.
               </p>
             </div>
@@ -90,15 +90,15 @@ const Index = () => {
       <section className="py-32 bg-background">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-6xl md:text-7xl font-light text-foreground mb-8 leading-tight">
+            <h2 className="text-5xl sm:text-6xl md:text-7xl font-light text-foreground mb-8 leading-tight">
               DEFINING THE FUTURE OF
               <br />
               <span className="font-bold">TECHNOLOGY</span>
             </h2>
-            <h3 className="text-3xl font-light text-foreground/70 mb-6 italic">
+            <h3 className="text-2xl sm:text-3xl font-light text-foreground/70 mb-6 italic">
               Progressive Innovation Foundation
             </h3>
-            <p className="text-xl text-foreground/70 font-light max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-foreground/70 font-light max-w-4xl mx-auto leading-relaxed">
               Where visionary thinking meets breakthrough execution - the most advanced technology platform of our era
             </p>
           </div>
@@ -115,7 +115,7 @@ const Index = () => {
                   { title: "Performance Metrics", description: "Exceeding all known performance benchmarks." },
                   { title: "Revolutionary Architecture", description: "A new paradigm in system design." }
                 ],
-                image: "/placeholder.svg"
+                image: "/nextGen.jpg"
               },
               {
                 icon: <Waves className="w-7 h-7" />,
@@ -126,7 +126,7 @@ const Index = () => {
                   { title: "Quantum Frequency", description: "Unlocking new dimensions of audio data." },
                   { title: "Sacred Geometry", description: "Algorithms inspired by ancient wisdom." }
                 ],
-                image: "/placeholder.svg"
+                image: "/Nadda.jpg"
               },
               {
                 icon: <Cpu className="w-7 h-7" />,
@@ -137,7 +137,7 @@ const Index = () => {
                   { title: "Real-Time Synthesis", description: "Generating audio at the speed of light." },
                   { title: "Zero-Latency Signal", description: "Instantaneous audio signal processing." }
                 ],
-                image: "/placeholder.svg"
+                image: "/viswakarma.jpg"
               },
               {
                 icon: <Brain className="w-7 h-7" />,
@@ -148,17 +148,17 @@ const Index = () => {
                   { title: "Predictive Intelligence", description: "Anticipating sound patterns with AI." },
                   { title: "Self-Evolving Algorithms", description: "AI that learns and improves on its own." }
                 ],
-                image: "/placeholder.svg"
+                image: "/progressiveAI.jpg"
               }
             ].map((item, idx) => (
               <div
                 key={idx}
-                className="group relative bg-slate-800/50 hover:bg-slate-800/80 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-blue-900/20 flex items-center gap-12"
+                className="group relative bg-slate-800/50 hover:bg-slate-800/80 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl hover:shadow-yellow-400/50 flex flex-col lg:flex-row items-center gap-12"
               >
-                <div className="w-2/5">
+                <div className="w-full lg:w-1/2">
                   <img src={item.image} alt={item.title} className="rounded-2xl w-full h-auto object-cover shadow-lg" />
                 </div>
-                <div className="w-3/5 relative z-10">
+                <div className="w-full lg:w-1/2 relative z-10">
                   {/* Icon and Title */}
                   <div className="flex items-center gap-5 mb-5">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-slate-700 group-hover:bg-slate-600 rounded-2xl shadow-sm transition-all duration-300">
@@ -166,7 +166,7 @@ const Index = () => {
                         {item.icon}
                       </div>
                     </div>
-                    <h4 className="text-3xl font-bold text-white tracking-tight">
+                    <h4 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
                       {item.title}
                     </h4>
                   </div>
@@ -196,12 +196,12 @@ const Index = () => {
       <section className="py-32 bg-background">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center mb-20">
-            <h2 className="text-6xl font-light text-foreground mb-8 leading-tight">
+            <h2 className="text-5xl sm:text-6xl font-light text-foreground mb-8 leading-tight">
               Unprecedented
               <br />
               <span className="font-medium">Performance</span>
             </h2>
-            <p className="text-xl text-foreground/70 font-light max-w-3xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-foreground/70 font-light max-w-3xl mx-auto leading-relaxed">
               Setting new industry benchmarks with revolutionary computational capabilities
             </p>
           </div>
@@ -230,7 +230,7 @@ const Index = () => {
               }
             ].map((metric, i) => (
               <div key={i} className="text-center group">
-                <div className="text-6xl font-light text-foreground mb-4 group-hover:text-foreground/80 transition-colors">
+                <div className="text-5xl sm:text-6xl font-light text-foreground mb-4 group-hover:text-foreground/80 transition-colors">
                   {metric.stat}
                 </div>
                 <div className="text-lg font-medium text-foreground mb-2">
@@ -248,7 +248,7 @@ const Index = () => {
       {/* Final CTA Section */}
       <section className="py-32 bg-background">
         <div className="max-w-7xl mx-auto px-8 text-center">
-          <h2 className="text-6xl md:text-7xl font-light text-white mb-8 leading-tight">
+          <h2 className="text-5xl sm:text-6xl md:text-7xl font-light text-white mb-8 leading-tight">
             Ready to
             <br />
             <span className="font-medium">Transform</span>
@@ -256,17 +256,17 @@ const Index = () => {
             <span className="font-extralight italic">Audio Intelligence?</span>
           </h2>
           
-          <p className="text-xl text-white/80 font-light leading-relaxed mb-12 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-white/80 font-light leading-relaxed mb-12 max-w-2xl mx-auto">
             Join the revolution in sound-based AI and experience the future of audio technology today.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="inline-flex items-center gap-3 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-colors">
+            <button className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-colors">
               <span>Get Started</span>
               <ArrowRight className="w-4 h-4" />
             </button>
             
-            <button className="inline-flex items-center gap-3 px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:border-white/50 transition-colors">
+            <button className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:border-white/50 transition-colors">
               <span>Contact Sales</span>
             </button>
           </div>

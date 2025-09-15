@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { useState } from "react";
 
@@ -15,7 +15,6 @@ const Header = () => {
     { name: "Home", path: "/" },
     { name: "Vishwakarma", path: "/vishwakarma" },
     { name: "Products", path: "/products" },
-    { name: "Resources", path: "/resources" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
@@ -67,7 +66,7 @@ const Header = () => {
               <SheetContent side="right" className="bg-[#0a0a14] border-l border-white/10">
                 <div className="flex justify-end p-4">
                     <button onClick={() => setIsOpen(false)} className="text-white hover:text-yellow-400">
-                        <Menu className="w-7 h-7" />
+                        <X className="w-7 h-7" />
                     </button>
                 </div>
                 <nav className="flex flex-col items-center space-y-8 mt-10">
