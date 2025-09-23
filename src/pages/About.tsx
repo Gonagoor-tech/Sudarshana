@@ -40,7 +40,7 @@ const About = () => {
                 img: "/lovable-uploads/70b63acd-9de5-4663-97cd-075971f8121d.png",
                 name: "Sowrav",
                 title: "Nirvaahak, Head of Systems",
-                desc: "Sowrav designs and verifies integrated circuits at the transistor level for high-performance electronic systems. Sowrav designs these systems and makes them suitable for silicon after thorough evaluation of all aspects from mathematics to silicon."
+                desc: "Sowrav specializes in HDL coding and RTL synthesis for digital VLSI systems, translating specifications into efficient, synthesizable architectures and ensuring robust validation through simulation and optimization for silicon implementation."
               },
               {
                 img: "/lovable-uploads/aad2f271-cf22-47d4-80da-ff584f99586c.png",
@@ -53,6 +53,12 @@ const About = () => {
                 name: "Rahulgouda Mariyappagoudar",
                 title: "Nirvaahak, AI in simulation",
                 desc: "Rahul develops the implementation of the mathematics for large scale purposes using tensorflow, before the models are moved to individual ASIC."
+              },
+              {
+                img: "/lovable-uploads/omer.png",
+                name: "Omer",
+                title: "Nirvaahak, RTL Engineer",
+                desc: "Omer develops and validates RTL code for digital circuits, translating specifications into synthesizable logic, performing simulation and debug, and optimizing for silicon success."
               }
             ].map((member, i) => (
               <div key={i} className="bg-secondary rounded-2xl p-8 shadow-lg border border-border/80 hover:shadow-xl transition-shadow duration-300">
