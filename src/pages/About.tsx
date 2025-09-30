@@ -39,8 +39,8 @@ const About = () => {
               {
                 img: "/lovable-uploads/70b63acd-9de5-4663-97cd-075971f8121d.png",
                 name: "Sowrav",
-                title: "Nirvaahak, Head of Systems",
-                desc: "Sowrav specializes in HDL coding and RTL synthesis for digital VLSI systems, translating specifications into efficient, synthesizable architectures and ensuring robust validation through simulation and optimization for silicon implementation."
+                title: "Nirvaahak, VLSI Engineer",
+                desc: "Sowrav designs and verifies circuits at the RTL and gate level for high‑performance electronic systems. He develops efficient digital architectures, optimizes them for performance, power, and area, and ensures successful  implementation on FPGA boards. Sowrav carries designs from mathematical models to hardware realization, thoroughly evaluating functionality, timing, and verification aspects to make them suitable for fabrication."
               },
               {
                 img: "/lovable-uploads/aad2f271-cf22-47d4-80da-ff584f99586c.png",
