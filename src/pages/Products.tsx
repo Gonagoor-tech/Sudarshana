@@ -12,7 +12,7 @@ const productData = {
       "Native support for Sanskrit-based SLM and LLM models",
       "Specialized hardware for sparse attention and rule-driven inference",
       "Low-power, high-throughput architecture",
-      "Seamless integration of quantum algorithms for future-ready computing"
+      "Seamless integration of quantum algorithm for future-ready computing"
     ],
     stats: [
       { stat: "100,000×", label: "High-Performance Computing", desc: "Audio processing compared to traditional architectures" },
