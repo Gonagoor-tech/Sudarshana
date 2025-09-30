@@ -11,7 +11,6 @@ import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import Vishwakarma from "./pages/Vishwakarma";
 
 const queryClient = new QueryClient();
 
@@ -29,7 +28,6 @@ const App = () => (
               <Route path="/products" element={<Products />} />
               <Route path="/about" element={<About />} />
               <Route path="/contact" element={<Contact />} />
-              <Route path="/vishwakarma" element={<Vishwakarma />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
