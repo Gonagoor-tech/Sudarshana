@@ -7,6 +7,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     steps:
       - uses: actions/checkout@v4
 
@@ -22,29 +23,35 @@ jobs:
           touch ~/.ssh/known_hosts
           chmod 644 ~/.ssh/known_hosts
 
-      - name: Add server to known_hosts (debug)
+      - name: Add server to known_hosts
         run: |
-          echo "Trying ssh-keyscan on host ${{ secrets.SSH_HOST }} port ${{ secrets.SSH_PORT }}"
           if [ -n "${{ secrets.SSH_PORT }}" ]; then
-            ssh-keyscan -vvv -p ${{ secrets.SSH_PORT }} -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts || echo "ssh-keyscan failed"
+            ssh-keyscan -p ${{ secrets.SSH_PORT }} -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
           else
-            ssh-keyscan -vvv -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts || echo "ssh-keyscan failed"
+            ssh-keyscan -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts
           fi
 
-      - name: Build (if needed)
+      - name: Build Project
         run: |
           npm ci
           npm run build
 
       - name: Ensure remote directory exists
         run: |
-          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=yes \
-            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
-            "mkdir -p /var/www/sudarshana"
+          ssh -i ~/.ssh/id_rsa \
+             -o StrictHostKeyChecking=yes \
+             -o ServerAliveInterval=60 \
+             -o ServerAliveCountMax=10 \
+             ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+             "mkdir -p /var/www/sudarshana"
 
-      - name: Deploy via rsync
+      - name: Deploy via rsync (fixed)
         run: |
-          rsync -avz --delete \
-            -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=yes" \
+          rsync -azvr --delete \
+            --partial --inplace --progress \
+            --timeout=60 \
+            -e "ssh -i ~/.ssh/id_rsa \
+                -o StrictHostKeyChecking=yes \
+                -o ServerAliveInterval=60 \
+                -o ServerAliveCountMax=10" \
             ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/sudarshana
-
