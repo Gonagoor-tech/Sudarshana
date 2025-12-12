@@ -1,0 +1,50 @@
+name: Auto Deploy to ACE Cloud
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up SSH dir and key
+        run: |
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Prepare known_hosts file
+        run: |
+          touch ~/.ssh/known_hosts
+          chmod 644 ~/.ssh/known_hosts
+
+      - name: Add server to known_hosts (debug)
+        run: |
+          echo "Trying ssh-keyscan on host ${{ secrets.SSH_HOST }} port ${{ secrets.SSH_PORT }}"
+          if [ -n "${{ secrets.SSH_PORT }}" ]; then
+            ssh-keyscan -vvv -p ${{ secrets.SSH_PORT }} -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts || echo "ssh-keyscan failed"
+          else
+            ssh-keyscan -vvv -H "${{ secrets.SSH_HOST }}" >> ~/.ssh/known_hosts || echo "ssh-keyscan failed"
+          fi
+
+      - name: Build (if needed)
+        run: |
+          npm ci
+          npm run build
+
+      - name: Ensure remote directory exists
+        run: |
+          ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=yes \
+            ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} \
+            "mkdir -p /var/www/sudarshana"
+
+      - name: Deploy via rsync
+        run: |
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/id_rsa -o StrictHostKeyChecking=yes" \
+            ./dist/ ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/sudarshana
+
