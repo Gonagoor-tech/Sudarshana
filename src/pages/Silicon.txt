@@ -1,0 +1,18 @@
+About Vishwakarma
+Headline:
+ Vishwakarma – The Future of Intelligent Processing
+Intro Text:
+ Vishwakarma is a revolutionary class of processors designed to embed semantic understanding into AI inference. By integrating structured linguistic priors from Sanskrit grammar and phonetics with high-performance vector, graph, and quantum processing cores, Vishwakarma provides unmatched efficiency and accuracy in AI workloads.
+Key Features:
+Native support for Sanskrit-based SLM and LLM models
+
+
+Specialized hardware for sparse attention and rule-driven inference
+
+
+Low-power, high-throughput architecture
+
+
+Seamless integration of quantum algorithms for future-ready computing
+
+
