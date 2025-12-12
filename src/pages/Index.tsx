@@ -244,6 +244,187 @@ const Index = () => {
           </div>
         </div>
       </section>
+<<<<<<< HEAD
+=======
+{/* Milestones & Achievements Section */}
+<section className="py-24 bg-background text-foreground">
+  <div className="max-w-7xl mx-auto px-8">
+    {/* Section Header */}
+    <div className="text-center mb-12">
+      <h2 className="text-5xl sm:text-6xl font-light mb-4">
+        Milestones & <span className="font-bold">Achievements</span>
+      </h2>
+      <p className="text-lg sm:text-xl text-foreground/70 font-light max-w-3xl mx-auto leading-relaxed">
+        Celebrating our journey of innovation, collaboration, and technological breakthroughs.
+      </p>
+    </div>
+
+    {/* Scrollable Cards Container */}
+    <div className="overflow-hidden relative">
+      <div className="flex gap-6 animate-vayuScroll w-max hover:animate-pause">
+        {[
+          {
+            img: "/lovable-uploads/DLI.jpg",
+            title: "Sudarshana Semiconductors is officially listed as a DLI Beneficiary!",
+            desc:
+              "A proud milestone in our journey of empowering India's semiconductor future. This achievement is the result of relentless dedication by Chirag S Rao, Prashanth Raghu, Md Omer, Rahulgouda, and Sowrav who were the minds shaping nextgen chip innovation in India.",
+          },
+          {
+            img: "/lovable-uploads/DPIIT-Sudarshana.jpg",
+            title: "A proud moment for Sudarshana Semiconductors",
+            desc:
+              "We are officially recognized as a DPIIT-registered Startup under the Technology Hardware & Semiconductor sector.",
+          },
+          {
+            img: "/lovable-uploads/Guruprasad.jpeg",
+            title:
+              "Catalyzing linguistic precision through a profound engagement",
+            desc:
+              "Honoured to connect with Dr. Shri Guru Prasad Avaru and the Kanaada Phonetics team, exploring their work on Indic language keyboards and the Tulu Ramayana digitization. Excited about ASIC-driven multilingual computing—a fusion of linguistics, cognitive science, and hardware innovation for inclusive digital literacy.",
+          },
+          {
+            img: "/lovable-uploads/ksu.jpg",
+            title: "Advancing the Sanskrit Renaissance Through Innovation",
+            desc:
+              "Honoured to engage with Karnataka Sanskrit University under Dr. Ahalya, sharing our work on Sanskrit’s mathematical precision and witnessing their appreciation. Excited as we move toward an MoU to begin developing a transformative language model.",
+          },
+          {
+            img: "/lovable-uploads/wipro.jpeg",
+            title: "Meeting with Shri Sundararaman Ganapathiraman, Wipro Research",
+            desc:
+              "Honoured to meet Shri Sundararaman Ganapathiraman, Chief Scientist at Wipro Research, and discuss the vision of Sudarshana Semiconductors. Grateful for his guidance and privileged to receive his book EmBossed Imprints.",
+          },
+          {
+            img: "/lovable-uploads/Kdem.jpeg",
+            title: "Engaging at KDEM Beyond Bengaluru Tech Summit",
+            desc:
+              "Had an inspiring experience at KDEM’s Beyond Bengaluru Tech Summit, Mysuru, engaging with VCs, mentors, and industry peers. Excited for upcoming deep-tech initiatives from Gonagoor Technology Solutions. Grateful to KDEM, KTECH, Startup Karnataka, and all stakeholders for an outstanding summit!",
+          },
+          {
+            img: "/lovable-uploads/tech.jpeg",
+            title: "Driving Deep-Tech Innovation at Techceleration 2025",
+            desc:
+              "Delighted to have Mr. Prashanth Raghu, Founder & CEO of Vayuvya Defence, Sudarshana Semiconductors, and Gonagoor Technology Solutions, as a speaker at Techceleration 2025, Belagavi. An inspiring experience witnessing insights driving India’s deep-tech and defence innovation forward.",
+          },
+          {
+            img: "/lovable-uploads/IIscevent.jpeg",
+            title: "Participating in IISc CeNSE Nanoelectronics Roadshow 2025",
+            desc:
+              "Excited to represent Gonagoor Technology Solutions at the IISc CeNSE Nanoelectronics Roadshow on March 27, 2025, alongside our Founder Prashanth Raghu, Head of Growth Chirag S Rao, and intern Sowrav Rao. Looking forward to engaging with industry leaders and advancing the future of nanoelectronics.",
+          },
+          {
+            img: "/lovable-uploads/iiscmeeting.jpeg",
+            title: "Productive Meeting at IISc for Vishwakarma Processor Collaboration",
+            desc:
+              "Had a wonderful day at IISc, exploring joint research across six fields with support to fabricate our first processor Vishwakarma - RISC-VDF at the CeNSE facility. Grateful to Kalpana Subbaramappa and the team for their guidance and collaboration—looking forward to impactful results.",
+          },
+          {
+            img: "/lovable-uploads/tess.jpg",
+            title: "Strategic Meeting at Tessolve on AI Accelerator Chip",
+            desc:
+              "Today, our team — Mohammed Omer, Sowrav, Chirag S. Rao, and Prashanth Raghu — visited Tessolve to present our AI accelerator chip architecture and explore a potential strategic partnership. Grateful to Mr. Sarfraz for facilitating the meeting and supporting our mission to build high-performance, energy-efficient AI silicon.",
+          },
+        ].map((item, i) => (
+          <div
+            key={i}
+            className="min-w-[280px] max-w-[280px] bg-slate-800/70 p-6 rounded-3xl flex-shrink-0 hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-64 h-64 object-cover rounded-2xl mb-4 shadow-lg"
+            />
+            <h4 className="text-base font-semibold text-white mb-2">
+              {item.title}
+            </h4>
+            <p className="text-sm text-foreground/70">{item.desc}</p>
+          </div>
+        ))}
+
+        {/* DUPLICATE LIST — updated 1–10 only */}
+        {[
+          {
+            img: "/lovable-uploads/DLI.jpg",
+            title: "Sudarshana Semiconductors is officially listed as a DLI Beneficiary!",
+            desc:
+              "A proud milestone in our journey of empowering India's semiconductor future. This achievement is the result of relentless dedication by Chirag S Rao, Prashanth Raghu, Md Omer, Rahulgouda, and Sowrav who were the minds shaping nextgen chip innovation in India.",
+          },
+          {
+            img: "/lovable-uploads/DPIIT-Sudarshana.jpg",
+            title: "A proud moment for Sudarshana Semiconductors",
+            desc:
+              "We are officially recognized as a DPIIT-registered Startup under the Technology Hardware & Semiconductor sector.",
+          },
+          {
+            img: "/lovable-uploads/Guruprasad.jpeg",
+            title:
+              "Catalyzing linguistic precision through a profound engagement",
+            desc:
+              "Honoured to connect with Dr. Shri Guru Prasad Avaru and the Kanaada Phonetics team, exploring their work on Indic language keyboards and the Tulu Ramayana digitization. Excited about ASIC-driven multilingual computing—a fusion of linguistics, cognitive science, and hardware innovation for inclusive digital literacy.",
+          },
+          {
+            img: "/lovable-uploads/ksu.jpg",
+            title: "Advancing the Sanskrit Renaissance Through Innovation",
+            desc:
+              "Honoured to engage with Karnataka Sanskrit University under Dr. Ahalya, sharing our work on Sanskrit’s mathematical precision and witnessing their appreciation. Excited as we move toward an MoU to begin developing a transformative language model.",
+          },
+          {
+            img: "/lovable-uploads/wipro.jpeg",
+            title: "Meeting with Shri Sundararaman Ganapathiraman, Wipro Research",
+            desc:
+              "Honoured to meet Shri Sundararaman Ganapathiraman, Chief Scientist at Wipro Research, and discuss the vision of Sudarshana Semiconductors. Grateful for his guidance and privileged to receive his book EmBossed Imprints.",
+          },
+          {
+            img: "/lovable-uploads/Kdem.jpeg",
+            title: "Engaging at KDEM Beyond Bengaluru Tech Summit",
+            desc:
+              "Had an inspiring experience at KDEM’s Beyond Bengaluru Tech Summit, Mysuru, engaging with VCs, mentors, and industry peers. Excited for upcoming deep-tech initiatives from Gonagoor Technology Solutions. Grateful to KDEM, KTECH, Startup Karnataka, and all stakeholders for an outstanding summit!",
+          },
+          {
+            img: "/lovable-uploads/tech.jpeg",
+            title: "Driving Deep-Tech Innovation at Techceleration 2025",
+            desc:
+              "Delighted to have Mr. Prashanth Raghu, Founder & CEO of Vayuvya Defence, Sudarshana Semiconductors, and Gonagoor Technology Solutions, as a speaker at Techceleration 2025, Belagavi. An inspiring experience witnessing insights driving India’s deep-tech and defence innovation forward.",
+          },
+          {
+            img: "/lovable-uploads/IIscevent.jpeg",
+            title: "Participating in IISc CeNSE Nanoelectronics Roadshow 2025",
+            desc:
+              "Excited to represent Gonagoor Technology Solutions at the IISc CeNSE Nanoelectronics Roadshow on March 27, 2025, alongside our Founder Prashanth Raghu, Head of Growth Chirag S Rao, and intern Sowrav Rao. Looking forward to engaging with industry leaders and advancing the future of nanoelectronics.",
+          },
+          {
+            img: "/lovable-uploads/iiscmeeting.jpeg",
+            title: "Productive Meeting at IISc for Vishwakarma Processor Collaboration",
+            desc:
+              "Had a wonderful day at IISc, exploring joint research across six fields with support to fabricate our first processor Vishwakarma - RISC-VDF at the CeNSE facility. Grateful to Kalpana Subbaramappa and the team for their guidance and collaboration—looking forward to impactful results.",
+          },
+          {
+            img: "/lovable-uploads/tess.jpg",
+            title: "Strategic Meeting at Tessolve on AI Accelerator Chip",
+            desc:
+              "Today, our team — Mohammed Omer, Sowrav, Chirag S. Rao, and Prashanth Raghu — visited Tessolve to present our AI accelerator chip architecture and explore a potential strategic partnership. Grateful to Mr. Sarfraz for facilitating the meeting and supporting our mission to build high-performance, energy-efficient AI silicon.",
+          },
+        ].map((item, i) => (
+          <div
+            key={"dup-" + i}
+            className="min-w-[280px] max-w-[280px] bg-slate-800/70 p-6 rounded-3xl flex-shrink-0 hover:scale-105 transition-transform duration-300"
+          >
+            <img
+              src={item.img}
+              alt={item.title}
+              className="w-64 h-64 object-cover rounded-2xl mb-4 shadow-lg"
+            />
+            <h4 className="text-base font-semibold text-white mb-2">
+              {item.title}
+            </h4>
+            <p className="text-sm text-foreground/70">{item.desc}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+>>>>>>> 05f55b0c066731ec428969f1136cd63cf85e85d3
 
       {/* Final CTA Section */}
       <section className="py-32 bg-background">
