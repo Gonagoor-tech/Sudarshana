@@ -1,7 +1,8 @@
 // File: Index.tsx
-import { CheckCircle, ArrowRight, Play, Zap, Brain, Cpu, Waves } from "lucide-react";
+import React from "react";
+import { ArrowRight, Play, Zap, Brain, Cpu, Waves } from "lucide-react";
 
-const Index = () => {
+const Index: React.FC = () => {
   return (
     <div className="min-h-screen bg-background text-foreground">
       {/* Hero Section */}
@@ -15,7 +16,7 @@ const Index = () => {
             loop
             playsInline
             className="w-full h-full object-cover"
-            style={{ filter: 'brightness(0.65 contrast(1.1)' }}
+            style={{ filter: "brightness(0.65) contrast(1.1)" }}
           >
             Your browser does not support the video tag.
           </video>
@@ -27,9 +28,11 @@ const Index = () => {
           <div className="max-w-4xl">
             <div className="mb-8">
               <div className="inline-block px-4 py-2 bg-white/10 backdrop-blur-md rounded-full border border-white/20 mb-8">
-                <span className="text-white/90 text-sm font-medium">Leading the major revolutions of the current era</span>
+                <span className="text-white/90 text-sm font-medium">
+                  Leading the major revolutions of the current era
+                </span>
               </div>
-              
+
               <h1 className="text-5xl sm:text-6xl md:text-7xl font-light text-white mb-6 tracking-tight leading-none">
                 REVOLUTIONARY
                 <br />
@@ -37,9 +40,10 @@ const Index = () => {
                 <br />
                 <span className="font-bold">AI PLATFORM</span>
               </h1>
-              
+
               <p className="text-lg sm:text-xl text-white/80 max-w-2xl mb-12 font-light leading-relaxed">
-                Revolutionary platform combining quantum computing with ancient sound principles to create the future of audio intelligence.
+                Revolutionary platform combining quantum computing with ancient sound
+                principles to create the future of audio intelligence.
               </p>
             </div>
 
@@ -51,7 +55,7 @@ const Index = () => {
                 <span>ABOUT US</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              
+
               <button className="group w-full sm:w-auto flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:bg-white/10 transition-all duration-300">
                 <Play className="w-4 h-4" />
                 <span>Watch Demo</span>
@@ -109,7 +113,8 @@ const Index = () => {
               {
                 icon: <Zap className="w-7 h-7" />,
                 title: "Next-Gen Innovation",
-                description: "Pioneering the most advanced AI technologies of our time, setting new industry standards and pushing the boundaries of what's possible.",
+                description:
+                  "Pioneering the most advanced AI technologies of our time, setting new industry standards and pushing the boundaries of what's possible.",
                 features: [
                   { title: "Industry-First Algorithms", description: "Leading the pack with proprietary algorithms." },
                   { title: "Performance Metrics", description: "Exceeding all known performance benchmarks." },
@@ -120,7 +125,8 @@ const Index = () => {
               {
                 icon: <Waves className="w-7 h-7" />,
                 title: "Naada Principles",
-                description: "Ancient Sanskrit sound science revolutionized with cutting-edge AI, creating unprecedented audio analysis capabilities never seen before.",
+                description:
+                  "Ancient Sanskrit sound science revolutionized with cutting-edge AI, creating unprecedented audio analysis capabilities never seen before.",
                 features: [
                   { title: "Harmonic Resonance", description: "Mapping the very essence of sound." },
                   { title: "Quantum Frequency", description: "Unlocking new dimensions of audio data." },
@@ -131,7 +137,8 @@ const Index = () => {
               {
                 icon: <Cpu className="w-7 h-7" />,
                 title: "Vishwakarma Platform",
-                description: "The world's most sophisticated semiconductor architecture designed specifically for next-generation sound-based machine learning at unprecedented scale.",
+                description:
+                  "The world's most sophisticated semiconductor architecture designed specifically for next-generation sound-based machine learning at unprecedented scale.",
                 features: [
                   { title: "Neural Processing", description: "Specialized for ultra-fast machine learning." },
                   { title: "Real-Time Synthesis", description: "Generating audio at the speed of light." },
@@ -142,7 +149,8 @@ const Index = () => {
               {
                 icon: <Brain className="w-7 h-7" />,
                 title: "Progressive AI",
-                description: "Machine learning models that represent the pinnacle of current AI evolution, understanding sound at levels previously thought impossible.",
+                description:
+                  "Machine learning models that represent the pinnacle of current AI evolution, understanding sound at levels previously thought impossible.",
                 features: [
                   { title: "Quantum-Level Audio", description: "Deep understanding of audio nuances." },
                   { title: "Predictive Intelligence", description: "Anticipating sound patterns with AI." },
@@ -162,19 +170,13 @@ const Index = () => {
                   {/* Icon and Title */}
                   <div className="flex items-center gap-5 mb-5">
                     <div className="inline-flex items-center justify-center w-16 h-16 bg-slate-700 group-hover:bg-slate-600 rounded-2xl shadow-sm transition-all duration-300">
-                      <div className="text-white">
-                        {item.icon}
-                      </div>
+                      <div className="text-white">{item.icon}</div>
                     </div>
-                    <h4 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
-                      {item.title}
-                    </h4>
+                    <h4 className="text-2xl sm:text-3xl font-bold text-white tracking-tight">{item.title}</h4>
                   </div>
 
                   {/* Description */}
-                  <p className="text-slate-300 font-light leading-relaxed mb-8 text-lg">
-                    {item.description}
-                  </p>
+                  <p className="text-slate-300 font-light leading-relaxed mb-8 text-lg">{item.description}</p>
 
                   {/* Feature List */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -208,138 +210,186 @@ const Index = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-16">
             {[
-              { 
-                stat: "100K+", 
-                label: "Times Faster", 
-                desc: "Processing speed compared to traditional systems" 
-              },
-              { 
-                stat: "<1ns", 
-                label: "Latency", 
-                desc: "Real-time processing for critical applications" 
-              },
-              { 
-                stat: "99.9%", 
-                label: "Accuracy", 
-                desc: "Precision in audio analysis and recognition" 
-              },
-              { 
-                stat: "24/7", 
-                label: "Availability", 
-                desc: "Continuous operation with zero downtime" 
-              }
+              { stat: "100K+", label: "Times Faster", desc: "Processing speed compared to traditional systems" },
+              { stat: "<1ns", label: "Latency", desc: "Real-time processing for critical applications" },
+              { stat: "99.9%", label: "Accuracy", desc: "Precision in audio analysis and recognition" },
+              { stat: "24/7", label: "Availability", desc: "Continuous operation with zero downtime" }
             ].map((metric, i) => (
               <div key={i} className="text-center group">
                 <div className="text-5xl sm:text-6xl font-light text-foreground mb-4 group-hover:text-foreground/80 transition-colors">
                   {metric.stat}
                 </div>
-                <div className="text-lg font-medium text-foreground mb-2">
-                  {metric.label}
-                </div>
-                <div className="text-foreground/70 text-sm font-light leading-relaxed">
-                  {metric.desc}
-                </div>
+                <div className="text-lg font-medium text-foreground mb-2">{metric.label}</div>
+                <div className="text-foreground/70 text-sm font-light leading-relaxed">{metric.desc}</div>
               </div>
             ))}
           </div>
         </div>
       </section>
-{/* Milestones & Achievements Section */}
-<section className="py-24 bg-background text-foreground">
-  <div className="max-w-7xl mx-auto px-8">
-    {/* Section Header */}
-    <div className="text-center mb-12">
-      <h2 className="text-5xl sm:text-6xl font-light mb-4">
-        Milestones & <span className="font-bold">Achievements</span>
-      </h2>
-      <p className="text-lg sm:text-xl text-foreground/70 font-light max-w-3xl mx-auto leading-relaxed">
-        Celebrating our journey of innovation, collaboration, and technological breakthroughs.
-      </p>
-    </div>
 
-    {/* Scrollable Cards Container */}
-    <div className="overflow-hidden relative">
-      <div className="flex gap-6 animate-vayuScroll w-max hover:animate-pause">
-        {[ 
-          {
-            img: "/lovable-uploads/DLI.jpg",
-            title: "Sudarshana Semiconductors is officially listed as a DLI Beneficiary!",
-            desc: "A proud milestone in our journey of empowering India's semiconductor future. This achievement is the result of relentless dedication by Chirag S Rao, Prashanth Raghu, Md Omer, Rahulgouda, and Sowrav who were the minds shaping nextgen chip innovation in India."
-          },
-          {
-            img: "/lovable-uploads/DPIIT-Sudarshana.jpg",
-            title: "A proud moment for Sudarshana Semiconductors",
-            desc: "We are officially recognized as a DPIIT-registered Startup under the Technology Hardware & Semiconductor sector."
-          },
-          {
-            img: "/lovable-uploads/ModernAI.jpg",
-            title: "Modern AI keeps guessing.",
-            desc: "We chose to stop guessing and start reasoning. While today’s AI hallucinates and predicts patterns, Sudarshana AI is built on something far more powerful: Rules. Logic. Grammar. Determinism. No hallucinations. No randomness. Only precision-driven intelligence designed for the real world. This is the future of trustworthy AI engineered, not approximated."
-          },
-          {
-            img: "/lovable-uploads/vision.jpg",
-            title: "The problem with AI was never intelligence; it was uncertainty.",
-            desc: "So we built an architecture that removes uncertainty entirely. While modern AI depends on probability and pattern prediction, Sudarshana AI is engineered on rules, grammar, logic, and structured knowledge. Not guesses, guarantees. A Sanskrit-driven rule engine. A deterministic knowledge graph. An architecture that understands before responding. Only precision, reasoning, and explainable intelligence designed for the real world. This is not just an improvement. This is a fundamentally different foundation for AI."
-          },
-          {
-            img: "/lovable-uploads/sanskrit.jpg",
-            title: "Why Sanskrit over Transformers?",
-            desc: "Because intelligence shouldn’t guess. We’re building AI on rules, logic, grammar, and absolute determinism. No hallucinations. No black boxes. Only explainable, mathematically grounded intelligence."
-          }
-        ].map((item, i) => (
-          <div key={i} className="min-w-[280px] max-w-[280px] bg-slate-800/70 p-6 rounded-3xl flex-shrink-0 hover:scale-105 transition-transform duration-300">
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-full h-40 object-contain rounded-2xl mb-4 shadow-lg"
-            />
-            <h4 className="text-base font-semibold text-white mb-2">{item.title}</h4>
-            <p className="text-sm text-foreground/70">{item.desc}</p>
+      {/* Milestones & Achievements Section */}
+      <section className="py-24 bg-background text-foreground">
+        <div className="max-w-7xl mx-auto px-8">
+          {/* Section Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-5xl sm:text-6xl font-light mb-4">
+              Milestones & <span className="font-bold">Achievements</span>
+            </h2>
+            <p className="text-lg sm:text-xl text-foreground/70 font-light max-w-3xl mx-auto leading-relaxed">
+              Celebrating our journey of innovation, collaboration, and technological breakthroughs.
+            </p>
           </div>
-        ))}
 
-        {/* Duplicate for infinite scroll */}
-        {[ 
-          {
-            img: "/lovable-uploads/DLI.jpg",
-            title: "Sudarshana Semiconductors is officially listed as a DLI Beneficiary!",
-            desc: "A proud milestone in our journey of empowering India's semiconductor future. This achievement is the result of relentless dedication by Chirag S Rao, Prashanth Raghu, Md Omer, Rahulgouda, and Sowrav who were the minds shaping nextgen chip innovation in India."
-          },
-          {
-            img: "/lovable-uploads/DPIIT-Sudarshana.jpg",
-            title: "A proud moment for Sudarshana Semiconductors",
-            desc: "We are officially recognized as a DPIIT-registered Startup under the Technology Hardware & Semiconductor sector."
-          },
-          {
-            img: "/lovable-uploads/ModernAI.jpg",
-            title: "Modern AI keeps guessing.",
-            desc: "We chose to stop guessing and start reasoning. While today’s AI hallucinates and predicts patterns, Sudarshana AI is built on something far more powerful: Rules. Logic. Grammar. Determinism. No hallucinations. No randomness. Only precision-driven intelligence designed for the real world. This is the future of trustworthy AI engineered, not approximated."
-          },
-          {
-            img: "/lovable-uploads/vision.jpg",
-            title: "The problem with AI was never intelligence; it was uncertainty.",
-            desc: "So we built an architecture that removes uncertainty entirely. While modern AI depends on probability and pattern prediction, Sudarshana AI is engineered on rules, grammar, logic, and structured knowledge. Not guesses, guarantees. A Sanskrit-driven rule engine. A deterministic knowledge graph. An architecture that understands before responding. Only precision, reasoning, and explainable intelligence designed for the real world. This is not just an improvement. This is a fundamentally different foundation for AI."
-          },
-          {
-            img: "/lovable-uploads/sanskrit.jpg",
-            title: "Why Sanskrit over Transformers?",
-            desc: "Because intelligence shouldn’t guess. We’re building AI on rules, logic, grammar, and absolute determinism. No hallucinations. No black boxes. Only explainable, mathematically grounded intelligence."
-          }
-        ].map((item, i) => (
-          <div key={"dup-" + i} className="min-w-[280px] max-w-[280px] bg-slate-800/70 p-6 rounded-3xl flex-shrink-0 hover:scale-105 transition-transform duration-300">
-            <img
-              src={item.img}
-              alt={item.title}
-              className="w-full h-40 object-contain rounded-2xl mb-4 shadow-lg"
-            />
-            <h4 className="text-base font-semibold text-white mb-2">{item.title}</h4>
-            <p className="text-sm text-foreground/70">{item.desc}</p>
+          {/* Scrollable Cards Container */}
+          <div className="overflow-hidden relative">
+            <div className="flex gap-6 animate-vayuScroll w-max hover:animate-pause">
+              {[
+                {
+                  img: "/lovable-uploads/DLI.jpg",
+                  title: "Sudarshana Semiconductors is officially listed as a DLI Beneficiary!",
+                  desc:
+                    "A proud milestone in our journey of empowering India's semiconductor future. This achievement is the result of relentless dedication by Chirag S Rao, Prashanth Raghu, Md Omer, Rahulgouda, and Sowrav who were the minds shaping nextgen chip innovation in India."
+                },
+                {
+                  img: "/lovable-uploads/DPIIT-Sudarshana.jpg",
+                  title: "A proud moment for Sudarshana Semiconductors",
+                  desc: "We are officially recognized as a DPIIT-registered Startup under the Technology Hardware & Semiconductor sector."
+                },
+                {
+                  img: "/lovable-uploads/Guruprasad.jpeg",
+                  title: "Catalyzing linguistic precision through a profound engagement",
+                  desc:
+                    "Honoured to connect with Dr. Shri Guru Prasad Avaru and the Kanaada Phonetics team, exploring their work on Indic language keyboards and the Tulu Ramayana digitization. Excited about ASIC-driven multilingual computing—a fusion of linguistics, cognitive science, and hardware innovation for inclusive digital literacy."
+                },
+                {
+                  img: "/lovable-uploads/ksu.jpg",
+                  title: "Advancing the Sanskrit Renaissance Through Innovation",
+                  desc:
+                    "Honoured to engage with Karnataka Sanskrit University under Dr. Ahalya, sharing our work on Sanskrit’s mathematical precision and witnessing their appreciation. Excited as we move toward an MoU to begin developing a transformative language model."
+                },
+                {
+                  img: "/lovable-uploads/wipro.jpeg",
+                  title: "Meeting with Shri Sundararaman Ganapathiraman, Wipro Research",
+                  desc:
+                    "Honoured to meet Shri Sundararaman Ganapathiraman, Chief Scientist at Wipro Research, and discuss the vision of Sudarshana Semiconductors. Grateful for his guidance and privileged to receive his book EmBossed Imprints."
+                },
+                {
+                  img: "/lovable-uploads/Kdem.jpeg",
+                  title: "Engaging at KDEM Beyond Bengaluru Tech Summit",
+                  desc:
+                    "Had an inspiring experience at KDEM’s Beyond Bengaluru Tech Summit, Mysuru, engaging with VCs, mentors, and industry peers. Excited for upcoming deep-tech initiatives from Gonagoor Technology Solutions. Grateful to KDEM, KTECH, Startup Karnataka, and all stakeholders for an outstanding summit!"
+                },
+                {
+                  img: "/lovable-uploads/tech.jpeg",
+                  title: "Driving Deep-Tech Innovation at Techceleration 2025",
+                  desc:
+                    "Delighted to have Mr. Prashanth Raghu, Founder & CEO of Vayuvya Defence, Sudarshana Semiconductors, and Gonagoor Technology Solutions, as a speaker at Techceleration 2025, Belagavi. An inspiring experience witnessing insights driving India’s deep-tech and defence innovation forward."
+                },
+                {
+                  img: "/lovable-uploads/IIscevent.jpeg",
+                  title: "Participating in IISc CeNSE Nanoelectronics Roadshow 2025",
+                  desc:
+                    "Excited to represent Gonagoor Technology Solutions at the IISc CeNSE Nanoelectronics Roadshow on March 27, 2025, alongside our Founder Prashanth Raghu, Head of Growth Chirag S Rao, and intern Sowrav Rao. Looking forward to engaging with industry leaders and advancing the future of nanoelectronics."
+                },
+                {
+                  img: "/lovable-uploads/iiscmeeting.jpeg",
+                  title: "Productive Meeting at IISc for Vishwakarma Processor Collaboration",
+                  desc:
+                    "Had a wonderful day at IISc, exploring joint research across six fields with support to fabricate our first processor Vishwakarma - RISC-VDF at the CeNSE facility. Grateful to Kalpana Subbaramappa and the team for their guidance and collaboration—looking forward to impactful results."
+                },
+                {
+                  img: "/lovable-uploads/tess.jpg",
+                  title: "Strategic Meeting at Tessolve on AI Accelerator Chip",
+                  desc:
+                    "Today, our team — Mohammed Omer, Sowrav, Chirag S. Rao, and Prashanth Raghu — visited Tessolve to present our AI accelerator chip architecture and explore a potential strategic partnership. Grateful to Mr. Sarfraz for facilitating the meeting and supporting our mission to build high-performance, energy-efficient AI silicon."
+                }
+              ].map((item, i) => (
+                <div
+                  key={i}
+                  className="min-w-[280px] max-w-[280px] bg-slate-800/70 p-6 rounded-3xl flex-shrink-0 hover:scale-105 transition-transform duration-300"
+                >
+                  <img src={item.img} alt={item.title} className="w-64 h-64 object-cover rounded-2xl mb-4 shadow-lg" />
+                  <h4 className="text-base font-semibold text-white mb-2">{item.title}</h4>
+                  <p className="text-sm text-foreground/70">{item.desc}</p>
+                </div>
+              ))}
+
+              {/* DUPLICATE LIST — updated 1–10 only */}
+              {[
+                /* same array repeated intentionally (keeps carousel long) */
+                {
+                  img: "/lovable-uploads/DLI.jpg",
+                  title: "Sudarshana Semiconductors is officially listed as a DLI Beneficiary!",
+                  desc:
+                    "A proud milestone in our journey of empowering India's semiconductor future. This achievement is the result of relentless dedication by Chirag S Rao, Prashanth Raghu, Md Omer, Rahulgouda, and Sowrav who were the minds shaping nextgen chip innovation in India."
+                },
+                {
+                  img: "/lovable-uploads/DPIIT-Sudarshana.jpg",
+                  title: "A proud moment for Sudarshana Semiconductors",
+                  desc: "We are officially recognized as a DPIIT-registered Startup under the Technology Hardware & Semiconductor sector."
+                },
+                {
+                  img: "/lovable-uploads/Guruprasad.jpeg",
+                  title: "Catalyzing linguistic precision through a profound engagement",
+                  desc:
+                    "Honoured to connect with Dr. Shri Guru Prasad Avaru and the Kanaada Phonetics team, exploring their work on Indic language keyboards and the Tulu Ramayana digitization. Excited about ASIC-driven multilingual computing—a fusion of linguistics, cognitive science, and hardware innovation for inclusive digital literacy."
+                },
+                {
+                  img: "/lovable-uploads/ksu.jpg",
+                  title: "Advancing the Sanskrit Renaissance Through Innovation",
+                  desc:
+                    "Honoured to engage with Karnataka Sanskrit University under Dr. Ahalya, sharing our work on Sanskrit’s mathematical precision and witnessing their appreciation. Excited as we move toward an MoU to begin developing a transformative language model."
+                },
+                {
+                  img: "/lovable-uploads/wipro.jpeg",
+                  title: "Meeting with Shri Sundararaman Ganapathiraman, Wipro Research",
+                  desc:
+                    "Honoured to meet Shri Sundararaman Ganapathiraman, Chief Scientist at Wipro Research, and discuss the vision of Sudarshana Semiconductors. Grateful for his guidance and privileged to receive his book EmBossed Imprints."
+                },
+                {
+                  img: "/lovable-uploads/Kdem.jpeg",
+                  title: "Engaging at KDEM Beyond Bengaluru Tech Summit",
+                  desc:
+                    "Had an inspiring experience at KDEM’s Beyond Bengaluru Tech Summit, Mysuru, engaging with VCs, mentors, and industry peers. Excited for upcoming deep-tech initiatives from Gonagoor Technology Solutions. Grateful to KDEM, KTECH, Startup Karnataka, and all stakeholders for an outstanding summit!"
+                },
+                {
+                  img: "/lovable-uploads/tech.jpeg",
+                  title: "Driving Deep-Tech Innovation at Techceleration 2025",
+                  desc:
+                    "Delighted to have Mr. Prashanth Raghu, Founder & CEO of Vayuvya Defence, Sudarshana Semiconductors, and Gonagoor Technology Solutions, as a speaker at Techceleration 2025, Belagavi. An inspiring experience witnessing insights driving India’s deep-tech and defence innovation forward."
+                },
+                {
+                  img: "/lovable-uploads/IIscevent.jpeg",
+                  title: "Participating in IISc CeNSE Nanoelectronics Roadshow 2025",
+                  desc:
+                    "Excited to represent Gonagoor Technology Solutions at the IISc CeNSE Nanoelectronics Roadshow on March 27, 2025, alongside our Founder Prashanth Raghu, Head of Growth Chirag S Rao, and intern Sowrav Rao. Looking forward to engaging with industry leaders and advancing the future of nanoelectronics."
+                },
+                {
+                  img: "/lovable-uploads/iiscmeeting.jpeg",
+                  title: "Productive Meeting at IISc for Vishwakarma Processor Collaboration",
+                  desc:
+                    "Had a wonderful day at IISc, exploring joint research across six fields with support to fabricate our first processor Vishwakarma - RISC-VDF at the CeNSE facility. Grateful to Kalpana Subbaramappa and the team for their guidance and collaboration—looking forward to impactful results."
+                },
+                {
+                  img: "/lovable-uploads/tess.jpg",
+                  title: "Strategic Meeting at Tessolve on AI Accelerator Chip",
+                  desc:
+                    "Today, our team — Mohammed Omer, Sowrav, Chirag S. Rao, and Prashanth Raghu — visited Tessolve to present our AI accelerator chip architecture and explore a potential strategic partnership. Grateful to Mr. Sarfraz for facilitating the meeting and supporting our mission to build high-performance, energy-efficient AI silicon."
+                }
+              ].map((item, i) => (
+                <div
+                  key={"dup-" + i}
+                  className="min-w-[280px] max-w-[280px] bg-slate-800/70 p-6 rounded-3xl flex-shrink-0 hover:scale-105 transition-transform duration-300"
+                >
+                  <img src={item.img} alt={item.title} className="w-64 h-64 object-cover rounded-2xl mb-4 shadow-lg" />
+                  <h4 className="text-base font-semibold text-white mb-2">{item.title}</h4>
+                  <p className="text-sm text-foreground/70">{item.desc}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        ))}
-      </div>
-    </div>
-  </div>
-</section>
+        </div>
+      </section>
 
       {/* Final CTA Section */}
       <section className="py-32 bg-background">
@@ -351,17 +401,17 @@ const Index = () => {
             <br />
             <span className="font-extralight italic">Audio Intelligence?</span>
           </h2>
-          
+
           <p className="text-lg sm:text-xl text-white/80 font-light leading-relaxed mb-12 max-w-2xl mx-auto">
             Join the revolution in sound-based AI and experience the future of audio technology today.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center">
             <button className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-black font-medium rounded-full hover:bg-white/90 transition-colors">
               <span>Get Started</span>
               <ArrowRight className="w-4 h-4" />
             </button>
-            
+
             <button className="inline-flex items-center justify-center gap-3 px-8 py-4 border border-white/30 text-white font-medium rounded-full hover:border-white/50 transition-colors">
               <span>Contact Sales</span>
             </button>
